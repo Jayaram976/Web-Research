@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 from googlesearch import search
 from summarizer import summarize_text
 import requests
-#from fpdf import FPDF
 import os
 
 def fetch_content(url):
@@ -28,79 +27,7 @@ def generate_report(query):
 #    save_as_pdf("reports/report.pdf", summarized)
     return summarized
 
-#def save_as_pdf(filepath, text):
-    # Ensure the directory exists
-#    os.makedirs(os.path.dirname(filepath), exist_ok=True)
 
-#    pdf = FPDF()
-#    pdf.set_auto_page_break(auto=True, margin=15)
-#    pdf.add_page()
-#    pdf.set_font("Arial", size=12)
-
-#    max_width = 180  # Width limit for the cell
-
-#    for line in text.split("\n"):
-#        words = line.split(' ')
-#        current_line = ""
-#        for word in words:
-#            if pdf.get_string_width(current_line + word + ' ') > max_width:
-#                pdf.multi_cell(0, 10, current_line.strip())
-#                current_line = word + ' '
-#            else:
-#                current_line += word + ' '
-#        if current_line.strip():  # print remaining
-#            pdf.multi_cell(0, 10, current_line.strip())
-
-#    pdf.output(filepath)
-
-
-#from fpdf import FPDF
-#import os
-
-#def save_as_pdf(filepath, text):
-    # Ensure the directory exist
-#    os.makedirs(os.path.dirname(filepath), exist_ok=True)
-
-#    pdf = FPDF()
-#    pdf.set_auto_page_break(auto=True, margin=15)
-#    pdf.add_page()
-
-    # Add a Unicode-compatible font (DejaVu Sans or any TTF font you like)
-#    pdf.add_font('DejaVu', '', 'DejaVuSans.ttf', uni=True)
-#    pdf.set_font('DejaVu', size=10)
-
-    # Maximum width for the line to avoid overflow
-#    max_width = 180  # Adjust this as needed for your page
-
-    # Split the text into lines, then process each line
-#    for line in text.split("\n"):
-        # Use multi_cell to handle word wrapping automatically
-#        pdf.multi_cell(max_width, 10, line)
-
-    # Output the PDF to the specified file
-#
-#    pdf.output(filepath)
-
-#final output
-#def save_as_pdf(filepath, text):
-    # Ensure the directory exists
-#    os.makedirs(os.path.dirname(filepath), exist_ok=True)
-
-#    pdf = FPDF()
-#    pdf.set_auto_page_break(auto=True, margin=15)
-#    pdf.add_page()
-
-    # ✅ Correct font path
-#    font_path = os.path.join(os.path.dirname(__file__), 'fonts', 'DejaVuSans.ttf')
-#    pdf.add_font('DejaVu', '', font_path, uni=True)
-#    pdf.set_font('DejaVu', size=10)
-
-#    max_width = 180
-
-#    for line in text.split("\n"):
-#        pdf.multi_cell(max_width, 10, line)
-
-#    pdf.output(filepath)
 
 
 
