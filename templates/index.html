@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gemini Web Research Agent</title>
+</head>
+<body>
+    <h1>Web Research Agent (Gemini 2.5)</h1>
+    <form method="post">
+        <input type="text" name="query" placeholder="Enter your research topic" required>
+        <button type="submit">Generate Report</button>
+    </form>
+
+    {% if report %}
+        <h2>Research Report</h2>
+        <pre>{{ report }}</pre>
+        <a href="/download"><button>Download PDF</button></a>
+    {% endif %}
+</body>
+</html>
