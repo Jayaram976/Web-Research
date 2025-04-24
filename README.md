@@ -71,6 +71,12 @@ Visit `http://127.0.0.1:5000` in your browser.
 
 ---
 
+## Output
+
+
+       Link: https://github.com/user-attachments/assets/37d627c1-b48d-478b-9f12-62ea0a4c1a68
+
+
 ##  Example Usage
 
 1. Enter a query like:
@@ -87,6 +93,9 @@ Visit `http://127.0.0.1:5000` in your browser.
    - Sources
 
 ---
+## Render Depolyment 
+
+Link:  https://web-research-4.onrender.com/
 
 ##  Credits
 Created by  https://github.com/Jayaram976
