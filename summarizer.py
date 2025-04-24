@@ -1,8 +1,5 @@
 # summarizer.py
 
-#AIzaSyDQ6FqWzYYUo2umEG6t2-VC4z1yDGM3TD4
-
-
 from dotenv import load_dotenv
 import google.generativeai as genai
 import os
