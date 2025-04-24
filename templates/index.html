@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Gemini Web Research Agent</title>
+    <meta charset="UTF-8">
+    <title>Web Research Agent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Web Research Agent (Gemini 2.5)</h1>
-    <form method="post">
-        <input type="text" name="query" placeholder="Enter your research topic" required>
-        <button type="submit">Generate Report</button>
-    </form>
-
-    {% if report %}
-        <h2>Research Report</h2>
-        <pre>{{ report }}</pre>
-        <a href="/download"><button>Download PDF</button></a>
-    {% endif %}
+    <div class="container">
+        <h1>Web Research Agent</h1>
+        <form method="POST">
+            <input type="text" name="query" placeholder="Enter your query here" required>
+            <button type="submit">Generate Report</button>
+        </form>
+        
+        {% if report %}
+            <div class="report-section">
+                <h2>Generated Report:</h2>
+                <div class="markdown">{{ report|safe }}</div>
+            </div>
+        
+        {% endif %}
+    </div>
 </body>
 </html>
+

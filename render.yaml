@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: web-research-agent
+    env: python
+    startCommand: "python app.py"
+   

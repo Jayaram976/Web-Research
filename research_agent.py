@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from googlesearch import search
 from summarizer import summarize_text
 import requests
-from fpdf import FPDF
+#from fpdf import FPDF
 import os
 
 def fetch_content(url):
@@ -25,7 +25,7 @@ def generate_report(query):
             raw_text += f"\n\n---\nSource: {url}\n\n{content}"
 
     summarized = summarize_text(raw_text)
-    save_as_pdf("reports/report.pdf", summarized)
+#    save_as_pdf("reports/report.pdf", summarized)
     return summarized
 
 #def save_as_pdf(filepath, text):
@@ -81,26 +81,26 @@ def generate_report(query):
 #
 #    pdf.output(filepath)
 
-
-def save_as_pdf(filepath, text):
+#final output
+#def save_as_pdf(filepath, text):
     # Ensure the directory exists
-    os.makedirs(os.path.dirname(filepath), exist_ok=True)
+#    os.makedirs(os.path.dirname(filepath), exist_ok=True)
 
-    pdf = FPDF()
-    pdf.set_auto_page_break(auto=True, margin=15)
-    pdf.add_page()
+#    pdf = FPDF()
+#    pdf.set_auto_page_break(auto=True, margin=15)
+#    pdf.add_page()
 
     # ✅ Correct font path
-    font_path = os.path.join(os.path.dirname(__file__), 'fonts', 'DejaVuSans.ttf')
-    pdf.add_font('DejaVu', '', font_path, uni=True)
-    pdf.set_font('DejaVu', size=10)
+#    font_path = os.path.join(os.path.dirname(__file__), 'fonts', 'DejaVuSans.ttf')
+#    pdf.add_font('DejaVu', '', font_path, uni=True)
+#    pdf.set_font('DejaVu', size=10)
 
-    max_width = 180
+#    max_width = 180
 
-    for line in text.split("\n"):
-        pdf.multi_cell(max_width, 10, line)
+#    for line in text.split("\n"):
+#        pdf.multi_cell(max_width, 10, line)
 
-    pdf.output(filepath)
+#    pdf.output(filepath)
 
 
 

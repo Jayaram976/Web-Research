@@ -1,0 +1,37 @@
+.markdown {
+    white-space: normal;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.markdown h2, .markdown h3 {
+    margin-top: 1.5em;
+    color: #34495e;
+}
+
+.markdown p {
+    margin: 1em 0;
+}
+
+.markdown ul, .markdown ol {
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.markdown pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.markdown a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.markdown a:hover {
+    text-decoration: underline;
+}
