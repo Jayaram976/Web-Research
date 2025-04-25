@@ -1,5 +1,7 @@
 #  Web Research Report Generator
 
+## OverView
+
 This is a Flask-based web application that takes a user's query, processes it using a custom research agent, and generates a clean, well-formatted report. The report is rendered using Markdown and styled with CSS for better readability.
 
 ---
@@ -24,11 +26,15 @@ User Query → Web Search API → Get URLs → Crawl & Scrape Content → Filter
 
 ---
 
-##  Tech Stack
+## Requirements
 
-- **Python 3**
 - **Flask**
-- **Markdown** (for formatting)
+- **fpdf**
+- **gemini-1.5-pro**
+- **requests**
+- **beautifulsoup4**
+- **python-dotenv**
+- **markdown**
 
   ---
 
