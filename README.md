@@ -5,7 +5,7 @@
 This is a Flask-based web application that takes a user's query, processes it using a custom research agent, and generates a clean, well-formatted report. The report is rendered using Markdown and styled with CSS for better readability.
 
 ---
-## Agent FlowChart
+## FlowChart
 
 User Query → Web Search API → Get URLs → Crawl & Scrape Content → Filter & Extract Relevant Info → Summarize & Structure → Final Report
 
