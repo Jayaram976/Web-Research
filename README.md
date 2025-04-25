@@ -19,12 +19,6 @@ User Query → Web Search API → Get URLs → Crawl & Scrape Content → Filter
 
 ---
 
-##  Preview
-
-![App Preview](static/preview.png)  
-<sub>*Example: Terror attack summary query rendered as a formatted report.*</sub>
-
----
 
 ## Requirements
 
